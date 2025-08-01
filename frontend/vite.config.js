@@ -11,11 +11,13 @@ export default defineConfig({
     proxy: {
       // All requests starting with /api will be proxied to the backend
       '/api': {
-        target: 'http://localhost:5000',   // or your backend port
+        target: 'https://scanlyzes.onrender.com',
         changeOrigin: true,
+        secure: true,
         // Remove the '/api' prefix if your backend routes are not prefixed (optional)
         // rewrite: path => path.replace(/^\/api/, ''),
       },
     },
   },
 })
+

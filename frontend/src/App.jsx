@@ -10,6 +10,9 @@ function AppInner() {
 
   if (!user) return <Auth />;
 
+  // Add this inside your component
+
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation Header */}
